@@ -11,7 +11,7 @@ brew tap malcomsonbrothers/tap
 ## Install Packages
 
 ```bash
-brew install --HEAD malcomsonbrothers/tap/yt-transcript
+brew install malcomsonbrothers/tap/yt-transcript
 ```
 
 ## Packages
@@ -35,4 +35,4 @@ brew uninstall yt-transcript
 - First run downloads model weights and runtime dependencies into:
   - `~/.cache/huggingface/hub/`
   - `~/.cache/uv/`
-- The formula is currently HEAD-only. Once you cut a tagged release of `yt-transcript`, switch to a versioned formula URL + `sha256` so users can install without `--HEAD`.
+- Bottles are not used for this formula; it installs a prebuilt release binary from GitHub Releases.
