@@ -1,15 +1,15 @@
 class YtTranscript < Formula
   desc "Download YouTube audio and transcribe it with Together AI or a local runtime"
   homepage "https://github.com/malcomsonbrothers/yt-transcript"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/malcomsonbrothers/yt-transcript/releases/download/v#{version}/yt-transcript-v#{version}-macos-arm64.tar.gz"
-    sha256 "6f6b27c9db935afe8eed78a06bfdc31f7443f5327ae346d54276ca8da5b553dc"
+    sha256 "6a085b79e5e8b84906eef5e2ec4f6c6c7cc1546489dca3c19893ddf875e3f9b0"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/malcomsonbrothers/yt-transcript/releases/download/v#{version}/yt-transcript-v#{version}-linux-x86_64.tar.gz"
-    sha256 "c5bd9659b63010c8a68fb381c1ffc2b706a7d135e27fd86a9cfa1a02567c7b09"
+    sha256 "dfc037f39b518931165b65412fd07b6c70dbd3d794cf6f28c5fe680fb948d191"
   end
 
   head "https://github.com/malcomsonbrothers/yt-transcript.git", branch: "master"
